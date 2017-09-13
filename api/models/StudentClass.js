@@ -8,17 +8,18 @@
 module.exports = {
 
   attributes: {
-    major_class_id: {
+    student_class_id: {
       type: 'integer',
       primaryKey: true,
       autoIncrement: true
     },
-    major_id: {
+    student_id: {
       type: 'integer',
     },
     class_id: {
       type: 'integer',
     },
   },
-  autoPK: false
+  autoPK: false,
+  tableName: "student_class"
 };
