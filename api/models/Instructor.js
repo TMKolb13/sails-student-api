@@ -32,6 +32,6 @@ module.exports = {
     tenured: {
       type: 'integer'
     },
-  }
+  },
   autoPK: false
 };
