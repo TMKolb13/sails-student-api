@@ -30,8 +30,9 @@ module.exports = {
       type: 'integer',
       maxLength: 4
     },
-    major_id: {
-      type: 'integer',
+    major: {
+      model: "major",
+      columnName: "major_id"
     },
     start_date: {
       type: 'date'
@@ -42,7 +43,7 @@ module.exports = {
         obj.start_date = obj.start_date.slice(0,-14);
       }
       return obj;
-    }
-  },
-  autoPK: false
+    },
+  // autoPK: false
+  }
 };

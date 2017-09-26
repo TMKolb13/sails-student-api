@@ -19,8 +19,9 @@ module.exports = {
     assignment_nbr: {
       type: 'integer'
     },
-    grade_id: {
-      type: 'integer'
+    grade: {
+      model: "grade",
+      columnName: "grade_id"
     },
     class_id: {
       type: 'integer'
